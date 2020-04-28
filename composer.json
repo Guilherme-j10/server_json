@@ -1,0 +1,11 @@
+{
+    "name": "guilh/appserver",
+    "description": "Server app for a aplication",
+    "authors": [
+        {
+            "name": "Guilherme-j10",
+            "email": "guilhermeZA.123123@gmail.com"
+        }
+    ],
+    "require": {}
+}
