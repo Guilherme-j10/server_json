@@ -67,7 +67,7 @@
                 if(isset($way[2]) == TRUE AND isset($way[3]) == TRUE AND isset($way[4]) == TRUE){
                     $json[$way[0]][$position]['nome'] = $way[2];
                     $json[$way[0]][$position]['categoria_notice'] = $way[3];
-                    $json[$way[0]][$position]['e-mail'] = $way[4];
+                    $json[$way[0]][$position]['email'] = $way[4];
                     echo json_encode($json[$way[0]][$position]);
                     file_put_contents('db.json', json_encode($json));
                 }
