@@ -7,10 +7,11 @@
     //PUT -> /pessoas/ID/NOME/NOME_CATEGORIA/EMAIL
 
     //CORS
+/*
     header("Access-Control-Allow-Origin: *");
     header("Access-Control-Allow-Headers: X-Requested-With, Content-Type, Origin, Cache-Control, Pragma, Authorization, Accept, Accept-Encoding");
     header("Cache-Control: no-cache, must-revalidate"); 
-    header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
+    header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");*/
 
     $way = explode('/', $_GET["pagina"]); 
     $conteudo = file_get_contents('db.json');
@@ -89,7 +90,6 @@
                 }
             }
             if($position >= 0){
-                header("HTTP/1.0 200 ok");
                 echo json_encode($json[$way[0]][$position]);
                 unset($json[$way[0]][$position]);
                 file_put_contents('db.json', json_encode($json));
