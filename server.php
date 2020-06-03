@@ -52,6 +52,7 @@
             $json[$way[0]][] = $jsonbody;
             echo json_encode($jsonbody);
             file_put_contents('db.json', json_encode($json));
+            echo json_encode($method);
         }
     }
 
