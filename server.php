@@ -89,6 +89,7 @@
                 }
             }
             if($position >= 0){
+                header("HTTP/1.0 200 ok");
                 echo json_encode($json[$way[0]][$position]);
                 unset($json[$way[0]][$position]);
                 file_put_contents('db.json', json_encode($json));
